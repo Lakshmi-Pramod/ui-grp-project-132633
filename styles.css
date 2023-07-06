@@ -27,7 +27,7 @@ body{
     left: -50%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(-45deg,#bf94ff,#140132);
+    background-image: linear-gradient(-45deg,#d2bafb,#000000);
     z-index: 6;
     transform: translateX(100%);
     transition: 1s ease-in-out;
@@ -64,7 +64,7 @@ form.sign_up_form{
 }
 .title{
     font-size: 35px;
-    color: #7825fd;
+    color: #000000;
     margin-bottom: 10px;
 }
 .input-field{
@@ -72,7 +72,7 @@ form.sign_up_form{
     height: 50px;
     background: #f0f0f0;
     margin: 10px 0;
-    border: 2px solid #7825fd;
+    border: 2px solid #000000;
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -108,7 +108,7 @@ form.sign_up_form{
     cursor: pointer;
 }
 .btn:hover{
-    background: #7825fd;
+    background: #000000;
 }
 .social_text{
     margin: 10px 0;
@@ -133,8 +133,8 @@ a{
     text-decoration:none ;
 }
 .social_icon:hover{
-    color: #b125fd;
-    border-color:#b125fd ;
+    color: #000000;
+    border-color:#000000 ;
 }
 .panel_container{
     position: absolute;
@@ -188,6 +188,9 @@ a{
 .right_panel .content{
     transform: translateX(0);
 }
+.account_text{
+    display: none;
+}
 /*Animations*/
 .c.sign_up_mode::before{
     transform: translateX(0);
@@ -212,38 +215,4 @@ a{
 }
 .c.sign_up_mode .left_panel{
     pointer-events: all;
-}
-/*Responsive*/
-@media (max-width:779px){
-    .c{
-        width: 100vw;
-        height: 100vh;
-    }
-}
-@media (max-width:635px){
-    .c::before{
-        display: none;
-    }
-    form{
-        width: 80%;
-    }
-    form.sign_up_form{
-        display: none;
-    }
-    .c.sign_up_mode2 form.sign_up_form{
-        display: flex;
-        opacity: 1;
-    }
-
-    .c.sign_up_mode2 form.sign_in_form{
-        display: none;
-    }
-    .panel_container{
-        display: none;
-    }
-}
-@media (max-width:320px){
-    form{
-        width: 90%;
-    }
 }
