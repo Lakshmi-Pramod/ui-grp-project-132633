@@ -6,15 +6,15 @@
     <body>
         <div class="c">
             <div class="signin_signup">
-                <form action="" class="sign_in_form">
+                <form class="sign_in_form" onSubmit="return validcheck1()" action="C:\Users\Lakshmi P Nair\Pictures\Project\project.html">
                     <h2 class="title">Sign in</h2>
                     <div class="input-field">
                         <i class="fas fa-user la"> </i>
-                        <input class="ut" type="text" placeholder="Username">
+                        <input class="ut" type="text" placeholder="Username" id="uname">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock la"> </i>
-                        <input class="ut" type="password" placeholder="password">
+                        <input class="ut" type="password" placeholder="password" id="pass0">
                     </div>
                     <input type="submit" value="Login" class="btn">
                     <p class="social_text">Or sign in with social platform </p>
@@ -35,15 +35,15 @@
                     <p class="account_text">Don't have an account ? <a href="#" id="sign_up_btn2">Sign up</a></p>
 
                 </form>
-                <form action="" class="sign_up_form">
+                <form class="sign_up_form" onSubmit="return validcheck()" action="C:\Users\Lakshmi P Nair\Pictures\Project\project.html">
                     <h2 class="title">Sign up</h2>
                     <div class="input-field">
                         <i class="fas fa-user la"> </i>
-                        <input class="ut" type="text" placeholder="Username">
+                        <input class="ut" type="text" placeholder="Username" id="Username">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-envelope la"></i>
-                        <input type="text" placeholder="Email" class="ut">
+                        <input type="text" placeholder="Email" class="ut" id="email">
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock la"> </i>
@@ -80,7 +80,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus magni modi tempore quasi non.</p>
                         <button class="btn" id="sign_in_btn">Sign in</button>
                     </div>
-                    <img src="signin.svg" alt="" class="image">
+                    
                 </div>
                 <div class="panel right_panel">
                     <div class="content">
@@ -88,7 +88,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit voluptatibus magni modi tempore quasi non.</p>
                         <button class="btn" id="sign_up_btn">Sign up</button>
                     </div>
-                    <img src="signup.svg" alt="" class="image">
+                    
                 </div>
             </div>
         </div>
